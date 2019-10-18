@@ -1,5 +1,30 @@
 #left-eye,
 #right-eye {
+  transform: translateX(0);
+  animation: side-eye 3s ease infinite;
+}
+
+@keyframes side-eye {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 
 }
 
@@ -10,5 +35,5 @@
 
 #bear:hover #left-ear,
 #bear:hover #right-ear {
-  transform:translateY(-10px);
+  transform: translateY(-10px);
 }
